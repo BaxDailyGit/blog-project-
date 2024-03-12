@@ -43,4 +43,10 @@ public class ArticleService {
         article.update(request.getTitle(), request.getContent());
         return article;
     }
+
+    //JPQL
+    @Transactional
+    public void updateTitle(Long id, String title) {
+        blogRepository.updateTitle(id, title);
+    }
 }

@@ -62,4 +62,11 @@ public class ArticleController {
         return ResponseEntity.status(HttpStatus.OK)
                 .body(updatedArticle);
     }
+
+    //JPQL
+    @PatchMapping("/api/articles/{id}")
+    public ResponseEntity<Void> updateTitle(@PathVariable Long id, @RequestBody UpdateArticleRequest request) {
+        articleService.updateTitle(id, request.getTitle());
+        return ResponseEntity.ok().build();
+    }
 }
