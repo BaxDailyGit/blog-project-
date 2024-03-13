@@ -49,4 +49,5 @@ public class ArticleService {
     public void updateTitle(Long id, String title) {
         blogRepository.updateTitle(id, title);
     }
+
 }

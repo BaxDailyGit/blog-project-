@@ -69,4 +69,6 @@ public class ArticleController {
         articleService.updateTitle(id, request.getTitle());
         return ResponseEntity.ok().build();
     }
+
+
 }
