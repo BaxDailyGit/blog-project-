@@ -44,7 +44,7 @@ public class ArticleService {
         return article;
     }
 
-    //JPQL
+    //JPQL을 사용하여 title을 수정하는 메소드 추가
     @Transactional
     public void updateTitle(Long id, String title) {
         blogRepository.updateTitle(id, title);
