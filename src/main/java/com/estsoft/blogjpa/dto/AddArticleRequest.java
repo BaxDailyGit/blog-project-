@@ -10,7 +10,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class AddArticleRequest {
+public class AddArticleRequest { // 게시글 추가 요청
     private String id;
     private String title;
     private String content;

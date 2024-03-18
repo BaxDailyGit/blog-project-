@@ -5,6 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+// JpaRepository<Entity, PK>
 public interface ArticleRepository extends JpaRepository<Article, Long> {
 
     // JPQL = Java Persistence Query Language

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @Controller
-public class BlogPageController {
+public class BlogPageController { // 블로그 페이지 컨트롤러
     private ArticleService articleService;
 
     public BlogPageController(ArticleService articleService) {
@@ -38,6 +38,7 @@ public class BlogPageController {
         return "article";
     }
 
+    // 새 글 작성 페이지 조회
     // id 키를 가진 queryParameter 값을 id변수에 매핑(id값이 없을 경우도 있음)
     @GetMapping("/new-article")
     public String newArticle(@RequestParam(required = false) Long id, Model model) {

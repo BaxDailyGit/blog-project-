@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ArticleResponse {
+public class ArticleResponse { // 게시글 조회 응답
     private String title;
     private String content;
 

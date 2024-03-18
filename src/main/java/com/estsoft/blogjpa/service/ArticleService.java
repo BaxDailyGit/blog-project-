@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class ArticleService {
+public class ArticleService { // 게시글 서비스
 
     private final ArticleRepository blogRepository;
 

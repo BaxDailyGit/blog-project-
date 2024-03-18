@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController        // HTTP Response Body에 객체 데이터를 JSON 형식으로 반환하는 컨트롤러
-public class ArticleController {
+public class ArticleController { // 게시글 컨트롤러
     private ArticleService articleService;
 
     public ArticleController(ArticleService articleService) {
@@ -29,6 +29,8 @@ public class ArticleController {
                 .body(article.toResponse());
     }
 
+
+    //모든 article 조회
     @GetMapping("/api/articles")
     public ResponseEntity<List<ArticleResponse>> findAllArticles() {
         List<ArticleResponse> list = articleService.findAll()

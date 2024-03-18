@@ -4,7 +4,7 @@ import com.estsoft.blogjpa.domain.Article;
 
 import java.time.LocalDateTime;
 
-public class ArticleViewResponse {
+public class ArticleViewResponse { // 게시글 상세 조회 응답
     private Long id;
     private String title;
     private String content;

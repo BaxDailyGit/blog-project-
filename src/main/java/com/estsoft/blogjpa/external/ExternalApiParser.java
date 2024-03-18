@@ -14,7 +14,7 @@ import java.util.List;
 
 @Slf4j
 @Component
-public class ExternalApiParser {
+public class ExternalApiParser { // 외부 API 파서
     private final RestTemplate restTemplate;
     private final ObjectMapper objectMapper;
     private final ArticleService articleService;
